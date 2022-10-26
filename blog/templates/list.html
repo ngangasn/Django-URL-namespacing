@@ -1,0 +1,12 @@
+Navigation
+<a href="{% url 'blog:list' %}">Articles</a>
+<a href="{% url 'products:list' %}">Products</a>
+
+<br style="margin: 2rem">
+
+Articles
+<ul>
+    {% for article in articles %}
+        <li><a href="">{{ article }}</a></li>
+    {% endfor %}
+</ul>
